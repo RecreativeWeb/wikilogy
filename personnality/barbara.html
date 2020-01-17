@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Chronology</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link title="timeline-styles" rel = "stylesheet" href = "https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+        <header>
+            <h1 class="logo">Chronology</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">News</a></li>
+                    <li><a href="../category.html">Category</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Connexion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="arrow">
+            <section>
+                <p class="breadcrumb">Chronology > Category > Personnality > Barbara</p>
+                <article>
+                    <h2 class="title">Barbara</h2>
+                    <div class="presentation">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolorum beatae, exercitationem ipsa. Debitis iste veniam, error voluptatem, nobis quibusdam quisquam perspiciatis tempora omnis, facere quam. Repellat, perferendis odit ut.
+                    </div>
+                    <div id='timeline-embed' style="width: 90%; height: 300px; margin: 0 auto;"></div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <small>Copyright @ <a href="https://www.recreative-web.fr">Recreative Web</a></small>
+        </footer>
+
+         <!-- Le constructeur TL.Timeline prend au moins deux arguments:
+         l'id du conteneur Timeline (pas de '#')
+         l'URL de votre fichier de données JSON ou de votre feuille de calcul Google
+         l'id doit faire référence à un élément "au dessus" de ce code,
+         et l'élément doit avoir un style CSS pour lui donner largeur et hauteur
+         éventuellement, un troisième argument avec des options de configuration peut être passé.
+         Voir ci-dessous pour plus d'informations sur les options. -->
+    <script type="text/javascript">
+        timeline = new TL.Timeline ('timeline-embed', 'https://docs.google.com/spreadsheets/d/1JCfcsfCl10aEd5HrzherGKswRmsGe7Q4KnvqLR-aoVM/edit#gid=0');
+    </script>
+</body>
+</html>
